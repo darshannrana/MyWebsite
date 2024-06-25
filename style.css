@@ -1,0 +1,24 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 95vh;
+}
+
+p {
+  font-family: Montserrat;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.title {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.channel {
+  color: black;
+}
