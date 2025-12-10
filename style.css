@@ -1,3 +1,4 @@
+/* General adjustments */
 body {
   margin: 0 !important;
   background-color: #f7f7f7;
@@ -7,20 +8,27 @@ p {
   font-family: roboto, sans-serif;
 }
 
+/* Header */
 .header {
   display: flex;
+  flex-wrap: wrap; /* allows items to wrap on small screens */
   height: 80px;
   background-color: black;
-  padding: 0 40px;
+  padding: 0 20px;
   align-items: center;
 }
 
+.logo-sec, .menu-sec {
+  flex: 1 1 100%;
+  text-align: center;
+  margin: 5px 0;
+}
+
 .logo-sec {
-  width: 50%;
+  text-align: left;
 }
 
 .menu-sec {
-  width: 50%;
   text-align: right;
 }
 
@@ -31,9 +39,9 @@ p {
 .menu {
   color: white;
   text-decoration: none;
-  margin-left: 40px;
+  margin-left: 20px;
   font-family: roboto, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   vertical-align: middle;
   transition: color 0.15s;
 }
@@ -42,17 +50,21 @@ p {
   color: rgb(250, 61, 61);
 }
 
+/* Intro section */
 .intro {
-  height: 600px;
   display: flex;
-  margin-top: 20px;
-  padding: 0 40px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  padding: 0 20px;
+}
+
+.intro-text, .photo {
+  flex: 1 1 100%;
+  max-width: 100%;
 }
 
 .intro-text {
-  width: 50%;
-  height: 400px;
-  font-family: roboto, sans-serif;
+  height: auto;
 }
 
 .intro-heading {
@@ -60,240 +72,98 @@ p {
 }
 
 .introduction {
-  font-size: 48px;
-  width: 500px;
-  margin-bottom: 0px;
-  margin-left: 10px;
+  font-size: 36px;
+  width: 100%;
   color: white;
+  margin-left: 0;
 }
 
 .about-me {
-  font-size: 20px;
-  width: 525px;
-  line-height: 26px;
-  margin-left: 10px;
+  font-size: 18px;
+  width: 100%;
+  line-height: 24px;
   color: rgb(99, 99, 99);
-}
-
-.email-sec {
-  margin-left: 10px;
-}
-
-.photo {
-  width: 50%;
+  margin-left: 0;
 }
 
 .intro-photo {
-  height: 600px;
-  width: 600px;
-  object-fit: cover;
-  object-position: center;
+  width: 100%;
+  height: auto;
+  max-width: 600px;
   border-radius: 20px;
 }
 
-.email-title {
-  font-size: 14px;
-  color: rgb(99, 99, 99);
-  margin-bottom: 10px;
+/* Email section */
+.email-sec {
+  margin: 10px 0;
 }
 
 .email-input {
-  padding: 10px;
-  font-size: 14px;
-  font-family: roboto, sans-serif;
-  width: 200px;
-  border: solid;
-  border-width: 1px;
-  border-radius: 4px;
+  width: 100%;
+  max-width: 250px;
+  margin-bottom: 10px;
 }
 
 .send-mail-button {
-  background-color: black;
-  color: white;
-  border: none;
-  padding: 10px;
-  font-size: 14px;
-  font-family: roboto, sans-serif;
-  cursor: pointer;
-  border-radius: 4px;
-  margin-left: 5px;
-  transition: opacity 0.15s;
-}
-
-.send-mail-button:hover {
-  opacity: 0.8;
-}
-
-.send-mail-button:active {
-  opacity: 0.6;
-}
-
-.terms-condition {
-  font-size: 14px;
-  font-family: roboto, sans-serif;
-  color: rgb(99, 99, 99);
-  margin-top: 10px;
-}
-
-.terms {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.hobby {
-  margin-top: 100px;
-  text-align: center;
-  background-color: #f7f7f7;
-  padding: 20px;
-  margin-bottom: 0px;
-}
-
-.my-skill {
-  font-family: "archivo black" ,roboto, sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.what-i {
-  font-family: "archivo black";
-  font-size: 48px;
-  font-weight: bold;
-  margin-bottom: 0px;
-  margin-top: 10px;
-}
-
-.hobby-sec {
+  width: 100%;
+  max-width: 100px;
+  margin-left: 0;
   margin-top: 5px;
+}
+
+/* Hobby & Skills */
+.hobby, .feature-work {
+  padding: 20px;
 }
 
 .about-hobby {
-  font-size: 20px;
-  color: rgb(99, 99, 99);
-  text-align: center;
-  justify-content: center;
-  margin-top: 5px;
-  padding: 0 90px;
-  margin-top: 20px;
-  font-family: "space grotesk";
+  padding: 0 20px;
 }
 
-.lets, .features {
-  font-family: "archivo black";
-  text-align: center;
-  font-size: 32px;
-  margin-bottom: 0px;
-}
-
-.features {
-  margin-top: 0px;
-  padding-top: 20px;
-}
-
-.feature-work {
-  background-color: #111111;
-  color: white;
-  padding: 0px 40px;
-  margin-bottom: 0px;
-  padding-bottom: 20px;
-}
-
-.image {
-  width: 50%;
-  height: 400px;
-  border-radius: 6px;
-  overflow: hidden;
-}
-
-.image-two {
-  width: 50%;
-  height: 400px;
-  margin-left: 20px;
-  border-radius: 6px;
-  overflow: hidden;
-}
-
-.gd-image {
-  width: 50%;
-  height: 650px;
-  border-radius: 6px;
-  overflow: hidden;
-}
-
-.gd-image-two {
-  width: 50%;
-  height: 650px;
-  margin-left: 20px;
-  border-radius: 6px;
-  overflow: hidden;
-}
-
-.graphic-photo {
-  margin-top: 20px;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  border-radius: 6px;
-}
-
-.graphic-photo-art {
-  margin-top: 20px;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  border-radius: 6px;
-  height: 650px;
-}
-
-.vertical-photo {
-  margin-top: 20px;
-  height: 600px;
-}
-
-.vertical-image {
-  height: 600px;
-  border-radius: 6px;
+/* Images */
+.image, .image-two, .gd-image, .gd-image-two, .vertical-image, .a, .gd, .art {
   width: 100%;
-  overflow: hidden;
+  height: auto;
+  margin-left: 0;
 }
 
-.a {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
+/* Hover effect remains */
+.a:hover, .gd:hover, .art:hover {
+  transform: scale(1.05);
 }
 
-.a:hover {
-  transform: scale(1.1);
-}
+/* Media Queries for small devices */
+@media (max-width: 768px) {
+  .header {
+    height: auto;
+    flex-direction: column;
+    padding: 10px;
+  }
 
-.gd {
-  width: 100%;
-  height: 650px;
-  object-fit: fill;
-  object-position: center;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
+  .menu {
+    font-size: 16px;
+    margin: 5px;
+  }
 
-.gd:hover {
-  transform: scale(1.1);
-}
+  .intro {
+    flex-direction: column;
+    padding: 10px;
+  }
 
-.art {
-  width: 100%;
-  height: 600px;
-  object-fit: fill;
-  object-position: center;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
+  .introduction {
+    font-size: 28px;
+  }
 
-.art:hover {
-  transform: scale(1.1);
+  .about-me {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .my-skill, .what-i, .lets, .features {
+    font-size: 24px;
+  }
+
+  .feature-work {
+    padding: 10px;
+  }
 }
