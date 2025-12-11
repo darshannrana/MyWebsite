@@ -444,6 +444,7 @@ p {
   /*Intro*/
   .intro {
     flex-direction: column;
+    padding: 20px;
   }
 
   .intro-text {
@@ -489,6 +490,10 @@ p {
   }
 
   /*Features WORK*/
+  .feature-work {
+    padding: 20px;
+  }
+  
   .features {
     margin-bottom: 20px;
   }
@@ -512,6 +517,10 @@ p {
 
   .horizontal-image, .a, .art { 
     height: 300px; 
+  }
+
+  .photography {
+    padding: 20px;
   }
 
   /*FOOTER*/
