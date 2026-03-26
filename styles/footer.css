@@ -1,0 +1,101 @@
+footer {
+  background-color: #151410;
+  margin-top: 40px;
+  border-radius: 40px;
+  padding: 70px;
+  justify-content: center;
+}
+
+.footer-border {
+  align-items: center;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 6px;
+  border-color: #ebe9df;
+  font-size: 12px;
+  font-family: 'Fira Code', monospace;
+  padding: 10px 15px;
+  width: fit-content; 
+  margin-bottom: 40px;
+  color: #ebe9df;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-mind {
+  color: #ebe9df;
+  font-size: 34px;
+  font-family: 'Libre Caslon Text';
+  font-style: italic;
+  margin: 0;
+  text-align: center;
+}
+
+.lets-talk {
+  font-family: 'Libre Caslon Text';
+  font-style: italic;
+  font-size: 250px;
+  text-align: center;
+  color: #ebe9df;
+  margin: 0;
+}
+
+.social-media {
+  padding-left: 20px;
+}
+
+.social-media button {
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 1;
+  padding: 10px 25px;
+  border-color: #ebe9df;
+  color: #ebe9df;
+  background-color: #151410;
+  cursor: pointer;
+  font-family: 'Geist', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  transition: opacity 0.15s;
+}
+
+.social-media button:hover {
+  opacity: 0.8;
+}
+
+.social-media button:active {
+  opacity: 0.5;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.design, .develop {
+  color: #ffffff99;
+  font-family: 'Geist', Arial, Helvetica, sans-serif;
+  text-align: right;
+}
+
+.designer, .developer {
+  color: #ebe9df;
+  font-style: italic;
+  transition: opacity 0.15s;
+}
+
+.designer:hover {
+  opacity: 0.8;
+}
+
+.designer:active {
+  opacity: 0.5;
+}
+
+/*.....MEDIA QUERY.....*/
+
+@media only screen and (max-width: 700px) {
+  .lets-talk {
+    font-size: 50px;
+  }
+}

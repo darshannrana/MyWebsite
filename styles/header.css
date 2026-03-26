@@ -1,0 +1,163 @@
+header {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px 70px;
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 35px;
+  position: fixed;
+  top: 20px;
+  left: 30px;
+  right: 30px;
+  height: 70px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+li, a, button {
+  font-family: 'Geist', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  width: 50px;
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+nav a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: white;
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+.download-cv button {
+  margin-left: 20px;
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.download-cv button:hover {
+  background-color: rgb(220, 221, 222);
+}
+
+.download-cv button:active {
+  background-color: rgb(190, 191, 192);
+}
+
+.fa-solid.fa-bars, .fa-solid.fa-xmark {
+  color: white;
+  font-size: 25px;
+  display: none;
+}
+
+.cv-logo {
+  display: none;
+}
+
+.nav-links .nav-cv-li {
+  display: none;
+}
+
+/*.....MEDIA QUERY.....*/
+
+@media only screen and (max-width: 700px) {
+
+  header {
+    padding: 30px 40px;
+    border-radius: 60px;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    position: fixed;
+  }
+
+  .logo {
+    width: 50px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links {
+    background-color: rgb(87, 86, 86);
+    position: absolute;
+    width: 100%;
+    right: 0;
+    top: 60px;
+    border-radius: 60px;
+    text-align: center;
+    height: auto;
+  }
+
+  .nav-links li {
+    display: block;
+    margin: 30px;
+  }
+
+  .nav-links li a {
+    font-size: 24px;
+  }
+
+  .download-cv {
+    display: none;
+  }
+
+  .fa-solid.fa-bars {
+    display: block;
+    font-size: 30px;
+  }
+
+  .fa-solid.fa-xmark {
+    display: none;
+    font-size: 30px;
+  }
+
+  .nav-links .nav-cv-li {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+
+}

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darsan Rana | Portfolio</title>
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="script.js">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Geist:wght@100..900
+  &family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+  integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!--header-->
+    <header>
+      <img src="images/logo.png" alt="logo" class="logo">
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="nav-cv-li"><a href="https://drive.google.com/file/d/1pPUlfp-e5uc-xKa-WTfz-dUYIdbgcARa/view?usp=sharing" target="_blank" class="nav-cv">Download CV</a></li>
+        </ul>
+      </nav>
+      <a href="https://drive.google.com/file/d/1pPUlfp-e5uc-xKa-WTfz-dUYIdbgcARa/view?usp=sharing" id="download-cv" class="download-cv" target="_blank">
+        <button>Download CV</button>
+      </a>
+      <i class="fa-solid fa-bars" id="menuIcon" onclick="openMenu()"></i>
+      <i class="fa-solid fa-xmark" id="closeIcon" onclick="closeMenu()"></i>
+    </header>
+
+  <!--introduction-->
+  <div class="container" id="home">
+    <div class="container-right">
+
+      <div class="intro-border">
+        ABOUT ME
+      </div>
+
+      <div>
+          <p class="intro-heading">
+            <span class="designer-txt">Designer</span> by profession, shaping ideas into visuals.
+          </p>
+      </div>
+
+      <div class="work-text">
+          <div>WEB</div>
+          <span>|</span>
+          <div>GRAPHIC DESIGN</div>
+          <span>|</span>
+          <div>UI/UX</div>
+      </div>
+
+      <div>
+        <p class="about-me">
+          I'm Darshan Rana, a passionate designer based in Nepal. Here, you'll 
+          get a glimpse of my journey in the world of designs, where creativity 
+          meets functionality.
+        </p>
+      </div>
+
+    </div>
+    
+    <div class="container-left">
+      <img src="images/8491.jpg" alt="intro-photo" class="intro-photo">
+    </div>
+  </div>
+
+  <!--my skills-->
+  <div class="skill-services" id="skills">
+    <div class="left-services">
+      <img src="images/designer.jpg" alt="desinger-img" class="designer-img">
+    </div>
+
+    <div class="right-services">
+
+      <div class="skill-services-border">
+        Skills &amp; Services
+      </div>
+
+      <div>
+        <p class="what-we-bring">
+          What I bring to the table...
+        </p>
+      </div>
+
+      <div class="service-title">
+        <div class="service-heading">
+          <p>Web Design</p>
+        </div>
+        
+        <div class="service-list">
+          <ul class="service-listt">
+            <li>
+              <div class="dot"></div>
+              <div>Design System</div>
+            </li>
+            <li>
+              <div class="dot"></div>
+              <div>Website Design</div>
+            </li>
+            <li>
+              <div class="dot"></div>
+              <div>Landing Pages</div>
+            </li>
+            <li>
+              <div class="dot"></div>
+              <div>User Experience Design</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="service-title">
+        <div class="service-heading">
+          <p>Brand Design</p>
+        </div>
+        
+        <div class="service-list">
+          <ul class="service-listt">
+            <li>
+              <div class="dot"></div>
+              <div>Visual Design</div>
+            </li>
+            <li>
+              <div class="dot"></div>
+              <div>Social Media Graphics</div>
+            </li>
+            <li>
+              <div class="dot"></div>
+              <div>Presentation Decks</div>
+            </li>
+            <li>
+              <div class="dot"></div>
+              <div>Color &amp; Typography</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--features work-->
+  <div class="images-container" id="work">
+    <div class="design-art-border">
+      Design &amp; Arts
+    </div>
+
+    <p class="features-work">
+      Features Work
+    </p>
+    <div class="col-img-container">
+    <!--UP-->
+      <div class="up-imgs">
+        <div class="up-left-img">
+          <img src="graphics/sunset.jpg" alt="sunset">
+        </div>
+        <div class="up-right-img">
+          <img src="graphics/golden-hour.png" alt="golden-hour">
+        </div>
+      </div>
+
+      <!--DOWN-->
+      <div class="down-imgs">
+        <div class="down-left-img">
+          <img src="graphics/climbing.jpg" alt="person-climbing">
+        </div>
+        <div class="down-middle-img">
+          <img src="graphics/vinland.jpg" alt="vinland-saga">
+        </div>
+        <div class="down-right-img">
+          <img src="graphics/bartika.jpg" alt="bartika-rai">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--
+
+  <!- -contact me- ->
+  <div class="contact-me-area">
+
+    <p class="want-to">
+      Want to know more?
+    </p>
+
+    <p class="lets-chat">
+      Let's Chat&excl;
+    </p>
+
+    <a href="#contact" class="contact-button"><button>Contact Me</button></a>
+
+    <p class="contact-dot">
+      ...
+    </p>
+
+    <p class="still-here">
+      Still here? Let me show you my hobby
+    </p>
+  </div>
+
+  <!- -hobby section-- >
+  <div class="hobby-sec"> 
+    <p class="nothing-serious">
+      Nothing Serious &minus;&minus; Just me, my camera, and a bunch of experiments turning into moments.
+    </p>
+
+    <div class="col-img-container">
+      <!- -up- ->
+      <div class="up-imgs">
+        <div class="up-left-img">
+          <img src="images/8.jpg" alt="jarsing">
+        </div>
+        <div class="up-right-img">
+          <img src="images/6.jpg" alt="chess">
+        </div>
+      </div>
+
+      <!- -middle-- >
+      <div class="up-imgs">
+        <div class="up-right-img">
+          <img src="images/1.png" alt="golden-hour">
+        </div>
+        <div class="up-left-img">
+          <img src="images/2.png" alt="marriot">
+        </div>
+      </div>
+
+      <!- -down- ->
+      <div class="up-imgs">
+        <div class="up-left-img">
+          <img src="images/5.jpg" alt="golden-hour">
+        </div>
+        <div class="up-right-img">
+          <img src="images/13306.jpg" alt="marriot">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!- -footer- ->
+  <footer>
+
+    <div class="footer-border">
+      LET'S CONNECT
+    </div>
+
+    <div>
+      <p class="project-mind">
+        Have a Project in mind?
+      </p>
+
+      <p class="lets-talk">
+        LET'S TALK
+      </p>
+    </div>
+
+    <div class="footer-social" id="contact">
+      <div class="left-menu">
+        <a href="https://www.instagram.com/darshannrana/" class="social-media" target="_blank">
+          <button>Instagram</button>
+        </a>
+
+        <a href="https://www.youtube.com/@darshannrana" class="social-media" target="_blank">
+          <button>Youtube</button>
+        </a>
+
+        <a href="mailto:darshanxroadie@gmail.com" class="social-media" target="_blank">
+          <button>Email</button>
+        </a>
+      </div>
+
+      <div class="right-menu">
+        <p class="design">
+          Design Inspire by <span class="designer">
+            <a href="https://www.julesstudio.co/" target="_blank">julesstudio</a>
+          </span>
+        </p>
+
+        <p class="develop">
+          Develop by <span class="developer">Darshan Rana</span>
+        </p>
+      </div>
+    </div>
+
+  </footer>
+-->
+  
+  <script src="script.js"></script>
+
+</body>
+</html>
