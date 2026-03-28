@@ -35,7 +35,7 @@ footer {
 .lets-talk {
   font-family: 'Libre Caslon Text';
   font-style: italic;
-  font-size: clamp(40px, 10vw, 250px);
+  font-size: 200px;
   text-align: center;
   color: #ebe9df;
   margin: 0;
