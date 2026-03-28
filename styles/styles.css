@@ -3,6 +3,8 @@
   margin-top: 100px;
   display: flex;
   border-radius: 40px;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .container-right {
@@ -40,7 +42,7 @@
 }
 
 .intro-heading {
-  font-family: 'Libre Caslon Text';
+  font-family: 'Libre Caslon Text', serif;
   font-size: 66px;
   margin-top: 0;
   color: #2E2C25;
@@ -54,6 +56,7 @@
 
 .work-text {
   display: flex;
+  flex-wrap: wrap;
   font-family: 'Fira Code', monospace;
   font-size: 20px;
   margin-top: 0;
@@ -94,6 +97,7 @@
   padding: 70px 0;
   background-color: white;
   gap: 40px;
+  overflow: hidden;
 }
 
 .left-services {
@@ -119,7 +123,7 @@
 }
 
 .what-we-bring {
-  font-family: 'Libre Caslon Text';
+  font-family: 'Libre Caslon Text', serif;
   font-size: 56px;
   font-weight: 500;
   color: #2E2C25;
@@ -137,7 +141,7 @@
 }
 
 .service-heading p {
-  font-family: 'Libre Caslon Text';
+  font-family: 'Libre Caslon Text', serif;
   font-weight: 500;
   font-style: italic;
   font-size: 38px;
@@ -184,7 +188,7 @@
 }
 
 .lets-look {
-  font-family: 'Libre Caslon Text';
+  font-family: 'Libre Caslon Text', serif;
   font-size: 56px;
   font-weight: 500;
   text-align: center;
@@ -198,10 +202,11 @@
   border-radius: 40px;
   padding: 70px;
   margin-top: 40px;
+  overflow: hidden;
 }
 
 .features-work {
-  font-family: 'Libre Caslon Text';
+  font-family: 'Libre Caslon Text', serif;
   font-size: 56px;
   font-weight: 500;
   font-style: italic;
@@ -264,9 +269,10 @@
 
 /* contact me */
 .contact-me-area {
-  font-family: 'Libre Caslon Text';
+  font-family: 'Libre Caslon Text', serif;
   text-align: center;
   margin-top: 130px;
+  overflow: hidden;
 }
 
 .want-to {
@@ -310,6 +316,7 @@
 .contact-dot {
   margin: 200px 0;
   font-size: 30px;
+  text-align: center;
 }
 
 .still-here {
@@ -342,6 +349,7 @@
     width: 100%;
     flex-direction: column;
     gap: 20px;
+    border-radius: 20px;
   }
 
   .intro-border {
@@ -396,6 +404,7 @@
   .left-services {
     width: 100%;
     height: 400px;
+    border-radius: 20px;
   }
 
   .right-services {
@@ -461,9 +470,9 @@
     margin: 30px 0;
   }
 
-  /* features work */
+  /* features work  ----  hobby section */
 
-  .images-container {
+  .images-container, .hobby-sec {
     padding: 40px 20px 30px 20px;
     border-radius: 20px;
   }
@@ -486,7 +495,6 @@
 
   .down-imgs {
     display: grid;
-    grid-template-columns: 2 ;
   }
 
   .down-left-img, .down-middle-img, .down-right-img {
@@ -498,6 +506,28 @@
     height: auto;
   }
 
-  
+  /* contact me */
+
+  .contact-me-area {
+    font-family: 'Libre Caslon Text', serif;
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  .want-to {
+    font-size: 40px;
+  }
+
+  .lets-chat {
+    font-size: 38px;
+  }
+
+  .contact-dot {
+    margin: 150px 0;
+  }
+
+  .still-here {
+    font-size: 32px;
+  }
 
 }

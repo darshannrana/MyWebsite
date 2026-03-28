@@ -4,6 +4,7 @@ footer {
   border-radius: 40px;
   padding: 70px;
   justify-content: center;
+  overflow: hidden;
 }
 
 .footer-border {
@@ -34,7 +35,7 @@ footer {
 .lets-talk {
   font-family: 'Libre Caslon Text';
   font-style: italic;
-  font-size: 250px;
+  font-size: clamp(40px, 10vw, 250px);
   text-align: center;
   color: #ebe9df;
   margin: 0;
@@ -68,6 +69,7 @@ footer {
 
 .footer-social {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -92,10 +94,44 @@ footer {
   opacity: 0.5;
 }
 
+.copyright {
+  color: #ebe9df;
+  text-align: center;
+  font-family: 'Geist', Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+}
+
 /*.....MEDIA QUERY.....*/
 
 @media only screen and (max-width: 700px) {
-  .lets-talk {
-    font-size: 50px;
+  
+  footer {
+    padding: 40px 20px 30px 20px;
   }
+
+  .project-mind {
+    font-size: 30px;
+  }
+
+  .lets-talk {
+    font-size: 48px;
+    margin-top: 20px;
+  }
+
+  .footer-social {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .left-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
 }
