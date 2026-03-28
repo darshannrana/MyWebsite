@@ -15,10 +15,6 @@ header {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
 }
 
-.homepage-link {
-  margin-right: auto;
-}
-
 li, a, button {
   font-family: 'Geist', Arial, Helvetica, sans-serif;
   font-weight: 500;
@@ -32,6 +28,7 @@ li, a, button {
   cursor: pointer;
   max-width: 100%;
   height: auto;
+  margin-right: auto;
 }
 
 .nav-links {
