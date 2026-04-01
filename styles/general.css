@@ -18,6 +18,14 @@ html {
   scroll-margin-top: 120px;
 }
 
+@media only screen and (max-width: 1000px) {
+
+ body {
+  padding: 10px 20px;
+ }
+ 
+}
+
 @media only screen and (max-width: 700px) {
 
  body {

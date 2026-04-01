@@ -102,10 +102,65 @@ nav a:hover::after {
 
 /*.....MEDIA QUERY.....*/
 
+@media only screen and (max-width: 1000px) {
+
+  header {
+    padding: 20px 40px;
+    border-radius: 60px;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    position: fixed;
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .download-cv {
+    display: none;
+  }
+
+  .fa-solid.fa-bars {
+    display: block;
+    font-size: 30px;
+  }
+
+  .fa-solid.fa-xmark {
+    display: none;
+    font-size: 30px;
+  }
+
+  .nav-links {
+    background-color: rgb(87, 86, 86);
+    position: absolute;
+    width: 100%;
+    right: 0;
+    top: 70px;
+    border-radius: 60px;
+    text-align: center;
+    height: auto;
+  }
+
+  .nav-links li {
+    display: block;
+    margin: 30px;
+  }
+
+  .nav-links li a {
+    font-size: 28px;
+  }
+
+}
+
 @media only screen and (max-width: 700px) {
 
   header {
-    padding: 30px 40px;
+    padding: 20px 40px;
     border-radius: 60px;
     top: 20px;
     left: 20px;
@@ -158,8 +213,4 @@ nav a:hover::after {
   .nav-links .nav-cv-li {
     display: block;
   }
-}
-
-@media only screen and (max-width: 900px) {
-
 }
